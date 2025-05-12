@@ -20,11 +20,3 @@ class Calculadora:
             return a % b
         except ZeroDivisionError:
             return "Error: División por cero no permitida."
-
-if __name__ == "__main__":
-    mi_calculadora = Calculadora()
-    print(mi_calculadora.sumar(5, 7))
-    print(mi_calculadora.restar(45, 11))
-    print(mi_calculadora.multiplicar(3, 2))
-    print(mi_calculadora.dividir(10, 0))   
-    print(mi_calculadora.modulo(10, 0))  
