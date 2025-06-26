@@ -1,0 +1,194 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff; /* Fondo azul claro */
+    color: #333;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #0056b3; /* Azul oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.encabezado h1 {
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Contenido principal */
+.contenido {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white; /* Fondo blanco para el contenido */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: #0056b3; /* Mismo azul que el encabezado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pie-pagina h2 {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #cce0ff;
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos para listas */
+ul, ol {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+/* Estilo destacado */
+.destacado {
+    background-color: #ffffcc;
+    padding: 15px;
+    border-left: 4px solid #ffeb3b;
+    border-radius: 4px;
+}
+
+/* Estilos para los formatos de texto */
+strong {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+mark {
+    background-color: yellow;
+}
+
+small {
+    font-size: 0.8em;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+/* Contenedor de la imagen */
+.contenedor-imagen {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo del enlace que contiene la imagen */
+.enlace-imagen {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para el enlace */
+.enlace-imagen:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de la imagen */
+.imagen-clickeable {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+/* Efecto hover para la imagen */
+.enlace-imagen:hover .imagen-clickeable {
+    opacity: 0.9;
+}
+
+/* Texto superpuesto */
+.texto-superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar texto al hacer hover */
+.enlace-imagen:hover .texto-superpuesto {
+    opacity: 1;
+}
